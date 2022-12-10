@@ -1,3 +1,4 @@
-//export Interface Irepo{
-
-//}
+export interface IRepo {
+  html_url: string;
+  name: string;
+}
