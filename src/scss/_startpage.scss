@@ -1,0 +1,140 @@
+@use "mixins" as mix;
+@use "variables" as var;
+
+.wrapperOfJunita {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bigName {
+    margin-top: 190px;
+  }
+  @include mix.desktop {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__bigName {
+      margin-top: 118px;
+    }
+  }
+}
+.wrapperOfBerglin {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bigName {
+    margin-bottom: 125px;
+  }
+  @include mix.desktop {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__bigName {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.wrapperOfMovementContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @include mix.desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.middleMovement {
+  border: solid black;
+  border-radius: 50px;
+  background-color: black;
+  width: 95%;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin-top: 4%;
+    color: var.$color-primary;
+  }
+  @include mix.desktop {
+    border: solid black;
+    border-radius: 50px;
+    background-color: black;
+    width: 70%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      margin-top: 2%;
+      color: var.$color-primary;
+    }
+  }
+}
+
+nav li:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+p:last-child {
+  animation: left 1s;
+}
+
+@keyframes left {
+  0% {
+    translate: -800px;
+  }
+
+  100% {
+    transform: 0px;
+  }
+}
+
+.footer__container {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+
+  &__logo {
+    height: 5px;
+    width: 5px;
+  }
+
+  &__arrow {
+    height: 90px;
+    width: 90px;
+  }
+
+  &__social {
+    height: 8vh;
+    width: 8vw;
+  }
+
+  &__copywrite {
+    font-size: 5px;
+  }
+}
+
+.navbar {
+  @include mix.navbar;
+}

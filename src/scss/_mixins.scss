@@ -1,0 +1,15 @@
+@use "variables" as var;
+
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin navbar {
+  font-weight: bold;
+}
+
+@mixin footer {
+  border: 10px;
+}

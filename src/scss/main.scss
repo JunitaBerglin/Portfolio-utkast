@@ -1,0 +1,33 @@
+@use "mixins" as mix;
+@use "variables" as var;
+@use "startpage";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var.$color-primary;
+  font-family: var.$font-family-primary;
+}
+
+h1 {
+  font-size: 110px;
+  color: #000000;
+
+  @include mix.desktop {
+    font-size: 200px;
+  }
+}
+h3 {
+  font-size: 40px;
+  color: #000000;
+}
+
+p {
+  font-size: 35px;
+  color: #fffcde;
+  animation: linear;
+  animation-duration: 2s;
+}
